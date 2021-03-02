@@ -1,5 +1,9 @@
+#!/bin/bash
+
 # Load secret variables from file
 source creds/secrets.sh
+
+echo "$BASE_HOST"
 
 # shellcheck disable=SC2002
 cat orig/sealed-secrets.yaml \
@@ -99,6 +103,6 @@ metadata:
   namespace: argo-events
 type: Opaque
 data:
-  token: $(echo -n $GH_TOKEN | base64)" \
+  token: $(echo -n "$GH_TOKEN" | base64)" \
     | kubeseal --format yaml \
     | tee argo-events/overlays/production/githubcred.yaml
