@@ -25,5 +25,5 @@ First, install `kubeseal` CLI from https://github.com/bitnami-labs/sealed-secret
 Then apply the following manifests to the cluster.
 
 ```
-kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.13.1/controller.yaml
+kubectl apply -f sealed-secrets/controller.yaml 
 ```
