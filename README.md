@@ -27,3 +27,6 @@ Then apply the following manifests to the cluster.
 ```
 kubectl apply -f sealed-secrets/controller.yaml 
 ```
+
+### Add secrets
+

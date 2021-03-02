@@ -3,8 +3,6 @@
 # Load secret variables from file
 source creds/secrets.sh
 
-echo "$BASE_HOST"
-
 # shellcheck disable=SC2002
 cat orig/sealed-secrets.yaml \
     | sed -e "s@carr-james@$GH_ORG@g" \
