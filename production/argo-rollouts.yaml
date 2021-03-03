@@ -9,7 +9,7 @@ spec:
   project: production
   source:
     path: argo-rollouts/base
-    repoURL: https://github.com/carr-jamess/argo-bootstrap
+    repoURL: https://github.com/carr-james/argo-bootstrap
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
